@@ -1,0 +1,41 @@
+{
+  "features": [
+    "absolute_magnitude",
+    "log_velocity",
+    "log_miss_distance",
+    "log_size_dist_ratio"
+  ],
+  "threshold": 0.59,
+  "best_params": {
+    "subsample": 1.0,
+    "reg_lambda": 3,
+    "n_estimators": 200,
+    "min_child_weight": 1,
+    "max_depth": 5,
+    "learning_rate": 0.02,
+    "gamma": 1,
+    "colsample_bytree": 1.0
+  },
+  "test_metrics": [
+    {
+      "Model": "Tuned XGBoost @ 0.50",
+      "PR-AUC": 0.4796,
+      "ROC-AUC": 0.908,
+      "Recall": 0.9924,
+      "Precision": 0.3087,
+      "F1": 0.4709,
+      "F2": 0.6877,
+      "MCC": 0.4832
+    },
+    {
+      "Model": "Tuned XGBoost @ 0.59 (recall-first)",
+      "PR-AUC": 0.4796,
+      "ROC-AUC": 0.908,
+      "Recall": 0.9878,
+      "Precision": 0.3119,
+      "F1": 0.4741,
+      "F2": 0.6891,
+      "MCC": 0.4852
+    }
+  ]
+}
