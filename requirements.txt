@@ -3,8 +3,5 @@ uvicorn
 python-multipart
 pandas
 numpy
-scikit-learn
 xgboost
 joblib
-pytest
-httpx

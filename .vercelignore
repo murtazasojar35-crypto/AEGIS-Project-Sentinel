@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+.git/
+neo (3).csv
+hazardous_asteroid_prediction_final.ipynb

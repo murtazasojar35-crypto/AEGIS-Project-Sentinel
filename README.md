@@ -30,6 +30,7 @@ python -m venv .venv
 . .venv/Scripts/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt  # only for local tests and development
 python -m uvicorn main:app --reload
 ```
 
@@ -67,7 +68,7 @@ The app intentionally does not expose or fabricate a more optimistic score than 
 ## Testing
 
 ```bash
-python -m pip install pytest httpx
+python -m pip install -r requirements-dev.txt
 python -m pytest -v
 ```
 
